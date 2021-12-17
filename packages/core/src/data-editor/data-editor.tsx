@@ -1,6 +1,6 @@
 import * as React from "react";
 import { assertNever, maybe } from "../common/support";
-import { clamp } from "lodash/fp";
+import { clamp } from "lodash-es";
 import DataGridOverlayEditor from "../data-grid-overlay-editor/data-grid-overlay-editor";
 import {
     EditableGridCell,
@@ -27,7 +27,7 @@ import {
 import DataGridSearch, { DataGridSearchProps } from "../data-grid-search/data-grid-search";
 import { browserIsOSX } from "../common/browser-detect";
 import { OverlayImageEditorProps } from "../data-grid-overlay-editor/private/image-overlay-editor";
-import { ThemeProvider, useTheme } from "styled-components";
+import { ThemeProvider, useTheme } from "@emotion/react";
 import { getDataEditorTheme, Theme } from "../common/styles";
 import { DataGridRef } from "../data-grid/data-grid";
 import { useEventListener } from "../common/utils";
@@ -1581,7 +1581,7 @@ const DataEditorImpl: React.ForwardRefRenderFunction<DataEditorRef, DataEditorPr
     }, [mangledRows, showTrailingBlankRow, trailingRowOptions?.tint]);
 
     const theme = useTheme();
-    const mergedTheme = React.useMemo(() => {
+    const mergedTheme: Theme & typeof theme = React.useMemo(() => {
         return { ...getDataEditorTheme(), ...theme };
     }, [theme]);
 

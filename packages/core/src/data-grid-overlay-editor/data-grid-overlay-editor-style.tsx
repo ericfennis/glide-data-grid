@@ -1,4 +1,5 @@
-import { styled } from "../common/styles";
+import { TP } from "../common/styles";
+import styled from '@emotion/styled'
 import { Rectangle } from "../data-grid/data-grid-types";
 import { GrowingEntryStyle } from "../growing-entry/growing-entry-style";
 
@@ -6,7 +7,7 @@ interface Props {
     targetRect: Rectangle;
     pad: boolean;
 }
-export const DataGridOverlayEditorStyle = styled.div<Props>`
+export const DataGridOverlayEditorStyle = styled.div<Props & TP>`
     position: absolute;
 
     display: flex;

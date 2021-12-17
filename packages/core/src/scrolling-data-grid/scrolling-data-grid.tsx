@@ -1,9 +1,10 @@
 import * as React from "react";
-import styled from "styled-components";
+import styled from '@emotion/styled'
 import DataGridDnd, { DataGridDndProps } from "../data-grid-dnd/data-grid-dnd";
 import { Rectangle } from "../data-grid/data-grid-types";
 import { InfiniteScroller } from "./infinite-scroller";
 import clamp from "lodash/clamp";
+import { TP } from "../common/styles";
 
 type Props = Omit<DataGridDndProps, "width" | "height" | "eventTargetRef">;
 
@@ -19,7 +20,7 @@ export interface ScrollingDataGridProps extends Props {
     readonly showMinimap?: boolean;
 }
 
-const MinimapStyle = styled.div`
+const MinimapStyle = styled.div<TP>`
     position: absolute;
     right: 44px;
     bottom: 44px;

@@ -1,7 +1,8 @@
-import { styled } from "../common/styles";
+import { TP } from "../common/styles";
+import styled from '@emotion/styled'
 import { disabledProps } from "../common/utils";
 
-export const SearchWrapper = styled.div<{ showSearch: boolean }>`
+export const SearchWrapper = styled.div<{ showSearch: boolean } & TP>`
     position: absolute;
     top: 4px;
     right: 20px;

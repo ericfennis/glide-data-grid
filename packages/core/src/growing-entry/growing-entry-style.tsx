@@ -1,16 +1,17 @@
-import { styled } from "../common/styles";
-import { css } from "styled-components";
+// import { styled } from "../common/styles";
+import styled from '@emotion/styled'
+import { TP } from '../common/styles';
 
-const inputProps = css`
-    font-size: 13px;
-    line-height: 16px;
-    font-family: ${p => p.theme.fontFamily};
-    color: ${p => p.theme.textDark};
-    padding: 0;
-    margin: 0;
-`;
+// const inputProps = css`
+//     font-size: 13px;
+//     line-height: 16px;
+//     font-family: ${p => p.theme.fontFamily};
+//     color: ${p => p.theme.textDark};
+//     padding: 0;
+//     margin: 0;
+// `;
 
-export const InputBox = styled.textarea`
+export const InputBox = styled.textarea<TP>`
     position: absolute;
     left: 0;
     right: 0;
@@ -32,10 +33,15 @@ export const InputBox = styled.textarea`
         color: ${p => p.theme.textLight};
     }
 
-    ${inputProps}
+    font-size: 13px;
+    line-height: 16px;
+    font-family: ${p => p.theme.fontFamily};
+    color: ${p => p.theme.textDark};
+    padding: 0;
+    margin: 0;
 `;
 
-export const ShadowBox = styled.div`
+export const ShadowBox = styled.div<TP>`
     visibility: hidden;
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -45,7 +51,12 @@ export const ShadowBox = styled.div`
 
     min-width: 100%;
 
-    ${inputProps}
+    font-size: 13px;
+    line-height: 16px;
+    font-family: ${p => p.theme.fontFamily};
+    color: ${p => p.theme.textDark};
+    padding: 0;
+    margin: 0;
 
     padding-bottom: 2px;
 `;

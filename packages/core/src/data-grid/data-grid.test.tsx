@@ -3,7 +3,7 @@ import * as React from "react";
 import { render, fireEvent, screen } from "@testing-library/react";
 import DataGrid, { DataGridProps, DataGridRef } from "./data-grid";
 import { GridCellKind } from "./data-grid-types";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "@emotion/react";
 import { getDataEditorTheme } from "../common/styles";
 
 const basicProps: DataGridProps = {

@@ -1,6 +1,7 @@
-import { styled } from "../../common/styles";
+import styled from '@emotion/styled'
+import { TP } from '../../common/styles';
 
-export const BubblesOverlayEditorStyle = styled.div`
+export const BubblesOverlayEditorStyle = styled.div<TP>`
     display: flex;
     flex-wrap: wrap;
 

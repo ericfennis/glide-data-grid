@@ -47,21 +47,25 @@
   },
   "homepage": "https://grid.glideapps.com",
   "dependencies": {
+    "@emotion/css": "^11.7.1",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "lodash-es": "^4.17.21",
     "react-number-format": "^4.4.1",
     "react-virtualized-auto-sizer": "^1.0.2"
   },
   "peerDependencies": {
     "lodash": "^4.17.19",
     "marked": "^0.7.0",
-    "react-responsive-carousel": "^3.2.7",
     "react": "^16.12.0 || 17.x",
     "react-dom": "^16.12.0 || 17.x",
-    "styled-components": "^5.2.0"
+    "react-responsive-carousel": "^3.2.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@glideapps/ts-helper": "0.0.5",
     "@skypack/package-check": "^0.2.2",
+    "@types/lodash-es": "^4.17.5",
     "eslint": "^7.12.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-react": "^7.21.5",

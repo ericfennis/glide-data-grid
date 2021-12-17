@@ -1,4 +1,4 @@
-import { styled } from "../common/styles";
+import styled from "@emotion/styled";
 import * as React from "react";
 
 interface WrapperProps {

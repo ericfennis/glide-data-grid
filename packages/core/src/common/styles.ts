@@ -1,5 +1,3 @@
-import baseStyled, { ThemedStyledInterface } from "styled-components";
-
 export interface Theme {
     accentColor: string;
     accentFg: string;
@@ -39,6 +37,10 @@ export interface Theme {
     headerFontStyle: string;
     baseFontStyle: string;
     fontFamily: string;
+}
+
+export interface TP {
+    theme?:Theme
 }
 
 const dataEditorBaseTheme: Theme = {
@@ -82,8 +84,6 @@ const dataEditorBaseTheme: Theme = {
     fontFamily:
         "Inter, Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, noto, arial, sans-serif",
 };
-
-export const styled = baseStyled as ThemedStyledInterface<Theme>;
 
 export function getDataEditorTheme(): Theme {
     return dataEditorBaseTheme;

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Theme } from "../common/styles";
-import { useTheme } from "styled-components";
+import { useTheme } from "@emotion/react";
 import ImageWindowLoader from "../common/image-window-loader";
 import {
     getColumnIndexForX,

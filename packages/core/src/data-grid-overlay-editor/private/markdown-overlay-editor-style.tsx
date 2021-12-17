@@ -1,6 +1,7 @@
 import { Rectangle } from "../../data-grid/data-grid-types";
 import { GrowingEntryStyle } from "../../growing-entry/growing-entry-style";
-import { styled } from "../../common/styles";
+import styled from '@emotion/styled'
+import { TP } from "../../common/styles";
 
 interface Props {
     targetRect: Rectangle;
@@ -13,7 +14,7 @@ interface Props {
         toggle to primary
     */
 
-export const MarkdownOverlayEditorStyle = styled.div<Props>`
+export const MarkdownOverlayEditorStyle = styled.div<Props & TP>`
     min-width: ${p => p.targetRect.width}px;
     width: 100%;
     display: flex;

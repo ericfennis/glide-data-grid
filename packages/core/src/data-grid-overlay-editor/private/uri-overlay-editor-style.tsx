@@ -1,6 +1,7 @@
-import { styled } from "../../common/styles";
+import styled from '@emotion/styled'
+import { TP } from '../../common/styles';
 
-export const UriOverlayEditorStyle = styled.div`
+export const UriOverlayEditorStyle = styled.div<TP>`
     display: flex;
 
     flex-grow: 1;

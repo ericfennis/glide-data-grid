@@ -1,4 +1,4 @@
-import { styled } from "../common/styles";
+import styled from '@emotion/styled'
 import type { Rectangle } from "..";
 import * as React from "react";
 import AutoSizer from "react-virtualized-auto-sizer";

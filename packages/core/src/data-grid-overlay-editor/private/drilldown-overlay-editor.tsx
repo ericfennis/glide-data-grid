@@ -1,8 +1,9 @@
 import { DrilldownCellData } from "../../data-grid/data-grid-types";
 import * as React from "react";
-import { styled } from "../../common/styles";
+import styled from '@emotion/styled'
+import { TP } from "../../common/styles";
 
-const DrilldownOverlayEditorStyle = styled.div`
+const DrilldownOverlayEditorStyle = styled.div<TP>`
     display: flex;
     flex-wrap: wrap;
 
