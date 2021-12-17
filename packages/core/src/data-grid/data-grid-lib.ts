@@ -172,6 +172,7 @@ let metricsSize = 0;
 let metricsCache: Record<string, TextMetrics | undefined> = {};
 
 async function clearCacheOnLoad() {
+    if(typeof document === 'undefined') return;
     if (document?.fonts?.ready === undefined) return;
     await document.fonts.ready;
     metricsSize = 0;

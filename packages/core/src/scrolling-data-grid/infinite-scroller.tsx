@@ -83,8 +83,11 @@ export const InfiniteScroller: React.FC<Props> = p => {
     const offsetY = React.useRef(0);
     const lastScrollY = React.useRef(0);
     const scroller = React.useRef<HTMLDivElement | null>(null);
+    const [dpr, setDpr] = React.useState(1)
 
-    const dpr = window.devicePixelRatio;
+    React.useEffect(() => {
+        setDpr(window.devicePixelRatio)
+    },[])
 
     React.useEffect(() => {
         const el = scroller.current;
